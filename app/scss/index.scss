@@ -1,0 +1,106 @@
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+// ---HEADER---
+.header{
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 78px;
+    }
+    &-logo{
+        margin-right: 169px;
+    }
+    &__logo-box{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__btn-box{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.logo{
+    width: 100%;
+}
+
+.navbar-link{
+    font-family: 'Rm';
+    font-size: 14px;
+    color: #9C9C9C;
+    margin-right: 50px;
+    transition: all 0.3s;
+    &:hover,:active{
+        color: #000000;
+    }
+        &:last-child{
+            margin-right: 0;
+        }
+}
+
+.btn-language{
+    font-family: 'Rm';
+    font-size: 14px;
+    color: #000000;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    padding: 2px;
+        &:first-child{
+        margin-left: 0;
+        }
+        &:hover,:focus{
+            padding: 2px;
+            border: 1px solid #DF1111;
+            border-radius: 5px;
+            color: #DF1111; 
+        }   
+}
+.active{
+    padding: 2px;
+    border: 1px solid #DF1111;
+    border-radius: 5px;
+    color: #DF1111; 
+}
+
+// ---SOCKETCAR---
+.socketcar{
+    &__wrapper{
+        padding-top: 160px;
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    &-device-img{
+        height: 312px;
+        position: absolute;
+        top: 0;
+    }
+    &-mouse-img{
+        margin: 50px 0 11px 0;
+    }
+}
+
+.btn-order{
+    font-family: 'Rm';
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 29px 38px;
+    background-color: #DF1111;
+    color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid transparent;
+        &:hover,:focus{
+            color:#DF1111;
+            background-color:#E9E9E9;
+            border: 2px solid #DF1111;
+        }
+}
