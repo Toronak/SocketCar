@@ -34,3 +34,9 @@ button{
   outline: none;
   cursor: pointer;
 }
+
+svg path {
+  fill:inherit;
+  stroke:inherit;
+  stroke-width:inherit;
+  }
