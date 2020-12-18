@@ -13,20 +13,24 @@
   <!-- ---HEADER--- -->
   <header class="header"><!-- JS Sticky header-->
     <div class="header__wrapper">
-      <!-- <div class="hamburger-menu">
+      <div class="hamburger-menu"><!--JS Hamburger-menu-->
           <span class="hamburger-row"></span>
         <div class="hamburger__nav-box hamburger__nav-box-active">
-          <div class="nav-item-box">
-            <a class="nav-item" href="#main">ГЛАВНАЯ</a>
-            <a class="nav-item" href="#documentation">ОБОРУДОВАНИЕ</a>
+          <nav class="nav-item-box">
+            <a href="./index.html" class="hamburger-logo"><img class="logo" src="./images/tablet/hamburger-logo.svg" alt="logo"/></a>
+            <a class="nav-item" href="#main">ГОЛОВНА</a>
+            <a class="nav-item" href="#equipment">ОБЛАДНАННЯ</a>
             <a class="nav-item" href="#partnership">ПАРТНЕРСТВО</a>
-            <a class="nav-item" href="#contacts">КОНТАКТЫ</a>
-          </div>
-          <button class="burger-btn-order">ЗАКАЗАТЬ УСТАНОВКУ</button>
+            <a class="nav-item" href="#contacts">КОНТАКТИ</a>
+            <div class="hamburger__btn-box"><!--JS Change language-->
+              <a href="#" class=" hamburger-btn-language active">UA</a>
+              <a href="#" class="hamburger-btn-language">RU</a>
+            </div>
+          </nav>
         </div>
-      </div> -->
+      </div>
       <div class="header__logo-box">
-        <a href="./index.html" class="header-logo"><img class="logo" src="./images/desktop/logo.svg" alt="logo"></a>
+        <a href="./index.html" class="header-logo"><img class="logo" src="./images/desktop/logo.svg" alt="logo"/></a>
       </div>
       <nav class="header-navbar">
         <a class="navbar-link" href="#main">ГОЛОВНА</a>
@@ -34,9 +38,9 @@
         <a class="navbar-link" href="#partnership">ПАРТНЕРСТВО</a>
         <a class="navbar-link" href="#contacts">КОНТАКТИ</a>
       </nav> 
-      <div class="header__btn-box"><!--JS Change language-->
-        <a href="#" class="btn-language active">UA</a>
-        <a href="#" class="btn-language">RU</a>
+      <div class="header__btn-box">
+        <a href="./index.html" class="btn-language active">UA</a>
+        <a href="./index.html" class="btn-language">RU</a>
       </div>
   </div>
 </header>
@@ -44,12 +48,19 @@
 <section class="socketcar" id="main">
   <div class="socketcar__wrapper">
     <div class="socketcar__box">
+      <div class="socketcar-contacts__box">
+        <p class="fone">+38 066 217 17 71</p>
+        <p class="fone-center">+38 073 217 17 71</p>
+        <p class="fone">+38 096 217 17 71</p>
+        <img  class="socketcar-contacts-row" src="./images/desktop/contacts-row.svg"/>
+        <img  class="socketcar-contacts-row-tablet" src="./images/tablet/contacts-row-tablet.svg"/>
+      </div>
       <img class="socketcar-device-img-bg" src="./images/desktop/title-bg.svg" alt="spiral">
       <img class="socketcar-device-img" src="./images/desktop/title-img.png" alt="device">
-      <span></span>
-      <button class="btn-order" name="myBtn">Замовити установку</button>
+      <img class="socketcar-logo" src="./images/desktop/title-logo.svg" alt="logo">
+      <button class="btn-order">Замовити установку</button>
       <img class="socketcar-mouse-img" src="./images/desktop/mouse.svg" alt="mouse">
-      <a class="socketcar-arrow" href="#wheel"><img class="arrow-img" src="./images/desktop/arrow-down.svg" alt="arrow"></a>
+      <a class="socketcar-arrow" href="#wheel"><img class="arrow-img" src="./images/desktop/arrow-down.svg" alt="arrow"/></a>
     </div>
   </div>
 </section>
@@ -57,24 +68,26 @@
 <section class="wheel" id="wheel">
   <div class="wheel__wrapper">
     <div class="wheel__redline-top">
-      <img class="redline-img" src="./images/desktop/red-line.svg" alt="red-line">
-      <img class="redline-img-tablet" src="./images/tablet/red-row-tablet.svg" alt="red-line">
+      <img class="redline-img-mobile" src="./images/mobile/red-row-mobile.svg" alt="red-line"/>
+      <img class="redline-img-tablet" src="./images/tablet/red-row-tablet.svg" alt="red-line"/>
+      <img class="redline-img" src="./images/desktop/red-line.svg" alt="red-line"/>
       <div class="redline-top-inner">
           <img class="redline-img-inner" src="./images/desktop/shield.svg" alt="shield">
-          <button class="redline-top-btn" name="myBtn">Захистити авто</button>
+          <button class="redline-top-btn">Захистити авто</button>
       </div>
     </div>
     <div class="wheel__center-box">
       <div class="wheel__center">
-        <img class="wheel-img" src="./images/desktop/wheel.png" alt="wheel">
+        <img class="wheel-img" src="./images/desktop/wheel.png" alt="wheel"/>
       </div>
     </div>
     <div class="wheel__redline-bot">
-        <img class="redline-img-reverse" src="./images/desktop/red-line.svg" alt="red-line">
-        <img class="redline-img-reverse-tablet" src="./images/tablet/red-row-tablet.svg" alt="red-line">
+      <img class="redline-img-reverse-mobile" src="./images/mobile/red-row-mobile.svg" alt="red-line"/>
+        <img class="redline-img-reverse" src="./images/desktop/red-line.svg" alt="red-line"/>
+        <img class="redline-img-reverse-tablet" src="./images/tablet/red-row-tablet.svg" alt="red-line"/>
         <div class="redline-bot-inner">
-            <img class="redline-img-inner" src="./images/desktop/people.svg" alt="shield">
-            <button class="redline-bot-btn" name="myBtn">Стати партнером</button>
+            <img class="redline-img-inner" src="./images/desktop/people.svg" alt="shield"/>
+            <button class="redline-bot-btn">Стати партнером</button>
         </div>
     </div>
   </div>
@@ -121,7 +134,7 @@
           таких як втрата ключа автомобіля перебуваючи за кордоном.</p>
       </div>
       <div class="documentation__img-box">
-        <img class="documentation-img" src="./images/desktop/schema.svg" alt="schema">
+        <img class="documentation-img" src="./images/desktop/schema.svg" alt="schema"/>
       </div>
     </div>
   </div>
@@ -133,14 +146,19 @@
       <h2 class="partnership-title">партнерство</h2>
     </div>
     <div class="partnership__info-row">
+      <img class="partnership-border-tablet" src="./images/tablet/partnership-row-tablet.svg"/>
       <img class="partnership-border-top" src="./images/desktop/part-border-top.svg"/>
       <img class="partnership-border" src="./images/desktop/part-border.svg"/>
       <img class="partnership-img" src="./images/desktop/partnership.png" alt="hands"/>
       <img class="partnership-img-bg"src="./images/desktop/partnership-bg.svg"/>
       <img  class="partnership-plus" src="./images/desktop/plus-left.svg"/>
+      <img  class="partnership-plus-mobile" src="./images/mobile/plus-mobile.svg"/>
       <div class="partnership__text-box">
         <p class="partnership-text-top">Ми пропонуємо співпрацю<br> автомайстерням, страховим<br> компаніям і автосалонам.</p>
         <p class="partnership-text-bot">Разом ми зможемо набагато ефективніше<br> захистити власників авто від викрадення<br> транспортний засіб.</p>
+        <p class="partnership-text-top-tablet">Ми пропонуємо співпрацю автомайстерням, страховим компаніям і автосалонам.</p>
+        <p class="partnership-text-bot-tablet">Разом ми зможемо набагато ефективніше захистити власників авто від викрадення транспортний засіб.</p>
+        <span class="red-row-tablet"></span>
       </div>
     </div>
   </div>
@@ -152,6 +170,7 @@
       <h2 class="about-title">про нас</h2>
     </div>
     <div class="about__info-row">
+      <img class="about-border-tablet" src="./images/tablet/about-row-tablet.svg"/>
       <img class="about-border-top" src="./images/desktop/about-border-top.svg"/>
       <img class="about-border" src="./images/desktop/about-border.svg"/>
       <img class="about-img" src="./images/desktop/about.png" alt="hands"/>
@@ -165,6 +184,14 @@
         <p class="about-text-center">Унікальність зручного та естетичного дівайсу -<br> гордість компанії!</p>
         <p class="about-text-bot">Мета роботи нашої компанії -<br> убезпечититранспортні засоби наших клієнтів,<br>
           тому велике увага приділяється технічній<br> підтримки та післяпродажного сервісу.</p>
+        <p class="about-text-top-tablet">SocketCar - компанія, що спеціалізується на оснащенні авто якісними
+          протиугінними пристроями. Маючи 10-річний досвід дослідження зломів та угонів транспортних
+          засобів, команда IT-інженерів та фахівців створила єдиний комплекс запобіжних заходів, що поєднав
+          механічні, електронні та програмні методи захисту Вашого авто!</p>
+        <p class="about-text-center-tablet">Унікальність зручного та естетичного дівайсу - гордість компанії!</p>
+        <p class="about-text-bot-tablet">Мета роботи нашої компанії - убезпечититранспортні засоби наших клієнтів,
+          тому велике увага приділяється технічній підтримки та післяпродажного сервісу.</p>
+        <span class="red-row-tablet-reverse"></span>  
       </div>
     </div>
   </div>
@@ -196,10 +223,17 @@
       <div class="footer__img-box">
           <a href="#main"><img class="reverse-arrow" src="./images/desktop/arrow-down.svg" alt="arrow"></a>
       </div>
+      <div class="footer-contacts__box">
+        <p class="fone">+38 066 217 17 71</p>
+        <p class="fone-center">+38 073 217 17 71</p>
+        <p class="fone">+38 096 217 17 71</p>
+        <img  class="footer-contacts-row" src="./images/desktop/contacts-row.svg">
+        <img  class="footer-contacts-row-tablet" src="./images/tablet/contacts-row-tablet.svg">
+      </div>
       <p class="all-rights">© 2020 Socket Car. Все права защищены.</p>
   </div>
 </footer>
-<div class="modal" id="myModal"><!--JS Modal window-->
+<div class="modal"><!--JS Modal window-->
   <div class="modal__content">
       <div class="close">
         <span class="close-icon"></span>
