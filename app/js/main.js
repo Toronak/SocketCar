@@ -1,28 +1,34 @@
+"use strict";
 //---Change language---
 let changeLanguage = document.querySelectorAll(".btn-language");
-// for (let i = 0; i < changeLanguage.length; i++) {
-//   changeLanguage[i].addEventListener("click", function() {
-//     let current = document.getElementsByClassName("active");
-//     current.className = current.className.replace(" active","");
-//     this.className =+ " active";
-//   });
-// }
-changeLanguage.onclick = function change(){
-if(changeLanguage.classList("active")){
-  changeLanguage.classList.remove("active");
-} else{
-  changeLanguage.classList.add("active");
+for (let i = 0; i < changeLanguage.length; i++) {
+  changeLanguage[i].addEventListener("click", function() {
+    let current = document.querySelector(".active");
+    current.className = current.className.replace(" active","");
+    this.className = `${this.className} active`;
+  });
 }
+
+let changeLanguageBurger = document.querySelectorAll(".hamburger-btn-language");
+for (let i = 0; i < changeLanguageBurger.length; i++) {
+  changeLanguageBurger[i].addEventListener("click", function() {
+    let currentBurger = document.querySelector(".glow");
+    currentBurger.className = currentBurger.className.replace(" glow","");
+    this.className = `${this.className} glow`;
+  });
 }
 //---Sticky header---
 window.onscroll = function() {scrollFunction()};
 
 let header = document.querySelector(".header");
+let burger = document.querySelector(".hamburger-row");
 
 function scrollFunction() {
   if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
     header.classList.add("header-sticky");
+    burger.classList.add("hamburger-row-scroll");
   } else {
+    burger.classList.remove("hamburger-row-scroll");
     header.classList.remove("header-sticky");
   }
 }
@@ -69,5 +75,5 @@ window.onclick = function(event) {
   document.querySelector(".hamburger__nav-box").classList.toggle("hamburger__nav-box-active");
   document.querySelector("body").classList.toggle("lock");
   document.querySelector(".header").classList.toggle("hide");
-  
+  document.querySelector(".hamburger__nav-box-wrapper").classList.toggle("hamburger__nav-box-wrapper-on");
 }

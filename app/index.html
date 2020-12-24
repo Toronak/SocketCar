@@ -15,6 +15,7 @@
     <div class="header__wrapper">
       <div class="hamburger-menu"><!--JS Hamburger-menu-->
           <span class="hamburger-row"></span>
+       <div class="hamburger__nav-box-wrapper">
         <div class="hamburger__nav-box hamburger__nav-box-active">
           <nav class="nav-item-box">
             <a href="./index.html" class="hamburger-logo"><img class="logo" src="./images/tablet/hamburger-logo.svg" alt="logo"/></a>
@@ -23,11 +24,12 @@
             <a class="nav-item" href="#partnership">ПАРТНЕРСТВО</a>
             <a class="nav-item" href="#contacts">КОНТАКТИ</a>
             <div class="hamburger__btn-box"><!--JS Change language-->
-              <a href="#" class=" hamburger-btn-language active">UA</a>
-              <a href="#" class="hamburger-btn-language">RU</a>
+              <button class="hamburger-btn-language glow">UA</button>
+              <button class="hamburger-btn-language">RU</button>
             </div>
           </nav>
         </div>
+       </div>
       </div>
       <div class="header__logo-box">
         <a href="./index.html" class="header-logo"><img class="logo" src="./images/desktop/logo.svg" alt="logo"/></a>
@@ -39,8 +41,8 @@
         <a class="navbar-link" href="#contacts">КОНТАКТИ</a>
       </nav> 
       <div class="header__btn-box">
-        <a href="./index.html" class="btn-language active">UA</a>
-        <a href="./index.html" class="btn-language">RU</a>
+        <a href="#" class="btn-language active">UA</a>
+        <a href="#" class="btn-language">RU</a>
       </div>
   </div>
 </header>
@@ -56,7 +58,7 @@
         <img  class="socketcar-contacts-row-tablet" src="./images/tablet/contacts-row-tablet.svg"/>
       </div>
       <img class="socketcar-device-img-bg" src="./images/desktop/title-bg.svg" alt="spiral">
-      <img class="socketcar-device-img" src="./images/desktop/title-img.png" alt="device">
+      <img class="socketcar-device-img" src="./images/desktop/title-img.webp" alt="device">
       <img class="socketcar-logo" src="./images/desktop/title-logo.svg" alt="logo">
       <button class="btn-order">Замовити установку</button>
       <img class="socketcar-mouse-img" src="./images/desktop/mouse.svg" alt="mouse">
@@ -78,7 +80,7 @@
     </div>
     <div class="wheel__center-box">
       <div class="wheel__center">
-        <img class="wheel-img" src="./images/desktop/wheel.png" alt="wheel"/>
+        <img class="wheel-img" src="./images/desktop/wheel.webp" alt="wheel"/>
       </div>
     </div>
     <div class="wheel__redline-bot">
@@ -92,28 +94,6 @@
     </div>
   </div>
 </section>
-<!-- ---EQUIPMENT--- -->
-<section class="equipment" id="equipment">
-  <div class="equipment__wrapper">
-    <div class="equipment__title-box">
-        <h2 class="equipment-title">обладнання</h2>
-    </div>
-    <div class="equipment__content-box">
-      <div class="content-box-left">
-        <img class="equipment-icon-shield" src="./images/desktop/icon-shield.svg" alt="icon-shield"/>
-        <p class="equipment-text">SocketCar - це надійність і гра<br> на випередження.</p>
-      </div>
-      <div class="content-box-center">
-        <img class="equipment-icon-like" src="./images/desktop/icon-like.svg" alt="icon-like"/>
-        <p class="equipment-text">SocketCar 100% гарантія безпеки.<br> Цілодобова технічна підтримка,<br> сервіс та он-лайн консультації.</p>
-      </div>
-      <div class="content-box-right">
-        <img class="equipment-icon-face" src="./images/desktop/icon-face.svg" alt="icon-face"/>
-        <p class="equipment-text">SocketCar - cпокійний і міцний сон<br> свого клієнта!</p>
-      </div>
-    </div>
-  </div>
-</section>
 <!-- ---DOCUMENTATION--- -->
 <section class="documentation">
   <div class="documentation__wrapper">
@@ -122,16 +102,14 @@
     </div>
     <div class="documentation__content-box">
       <div class="documentation-text-box">
-        <p class="documentation-text">Електронна частина протиугінного комплексу є мозком всієї системи. Висока складність пристрою,
-          якість компонентів і їх монтажу роблять систему безвідмовною і зводить шанси успішного викрадення до нуля.<br>
-          Програмна частина системи гарантує господареві транспортного засобу відчуття спокою, і в той же час
-          переконатися в збереженні автомобіля.</p>
-        <span class="documentation-redline"></span>
-        <span class="documentation-redline-sm"></span>
-        <p class="documentation-text">Естетика реалізації та монтажу комплексу не впливає негативно на загальний вигляд салону
-          транспортного засобу. Кожен користувач даними протиугінним комплексом гарантовано отримує надійний
-          захист, а також технічну підтримку 24/7 навіть в екстрених випадках,
-          таких як втрата ключа автомобіля перебуваючи за кордоном.</p>
+        <p class="documentation-text">Електромеханічний протиугінний пристрій представляє собою контактну систему, яка складається з двох частин:
+          стаціонарного багатоконтактного роз'єму та знімного штекера (ключа-конектора).
+          Механічне роз’єднання електричного кола системи призводить до блокування системи транспортного засобу.</p>
+        <p class="documentation-text-center">Відсутність можливості безконтактного керування системою – робить її захищеною від віддаленого «зламу»,
+          надає власнику транспортного засобу відчуття спокою.
+          Без авторизації індивідуальним «ключем-конектором» запуск систем транспортного засобу стане проблемою навіть для фахівця.</p>
+        <p class="documentation-text-bot">Естетика встановленого пристрою не впливає на загальний інтер’єр салону.
+          Кожен власник транспортного засобу може вибрати окреме місце встановлення стаціонарного роз’єму, яке буде відоме лише йому.</p>
       </div>
       <div class="documentation__img-box">
         <img class="documentation-img" src="./images/desktop/schema.svg" alt="schema"/>
@@ -149,15 +127,15 @@
       <img class="partnership-border-tablet" src="./images/tablet/partnership-row-tablet.svg"/>
       <img class="partnership-border-top" src="./images/desktop/part-border-top.svg"/>
       <img class="partnership-border" src="./images/desktop/part-border.svg"/>
-      <img class="partnership-img" src="./images/desktop/partnership.png" alt="hands"/>
+      <img class="partnership-img" src="./images/desktop/partnership.webp" alt="hands"/>
       <img class="partnership-img-bg"src="./images/desktop/partnership-bg.svg"/>
       <img  class="partnership-plus" src="./images/desktop/plus-left.svg"/>
       <img  class="partnership-plus-mobile" src="./images/mobile/plus-mobile.svg"/>
       <div class="partnership__text-box">
-        <p class="partnership-text-top">Ми пропонуємо співпрацю<br> автомайстерням, страховим<br> компаніям і автосалонам.</p>
-        <p class="partnership-text-bot">Разом ми зможемо набагато ефективніше<br> захистити власників авто від викрадення<br> транспортний засіб.</p>
-        <p class="partnership-text-top-tablet">Ми пропонуємо співпрацю автомайстерням, страховим компаніям і автосалонам.</p>
-        <p class="partnership-text-bot-tablet">Разом ми зможемо набагато ефективніше захистити власників авто від викрадення транспортний засіб.</p>
+        <p class="partnership-text-top">Ми пропонуємо співпрацю страховим<br> компаніям,автосалонам та фвтомайстерням.</p>
+        <p class="partnership-text-bot">Наша мета - ефективніше протидіяти<br> зловмисникам та максимально захистити<br> ваш транспортний засіб від угону!</p>
+        <p class="partnership-text-top-tablet">Ми пропонуємо співпрацю страховим компаніям,автосалонам та фвтомайстерням.</p>
+        <p class="partnership-text-bot-tablet">Наша мета - ефективніше протидіяти зловмисникам та максимально захистити ваш транспортний засіб від угону!</p>
         <span class="red-row-tablet"></span>
       </div>
     </div>
@@ -173,24 +151,21 @@
       <img class="about-border-tablet" src="./images/tablet/about-row-tablet.svg"/>
       <img class="about-border-top" src="./images/desktop/about-border-top.svg"/>
       <img class="about-border" src="./images/desktop/about-border.svg"/>
-      <img class="about-img" src="./images/desktop/about.png" alt="hands"/>
+      <img class="about-img" src="./images/desktop/about.webp" alt="hands"/>
       <img class="about-img-bg" src="./images/desktop/about-bg.svg"/>
       <img  class="about-plus" src="./images/desktop/about-plus.svg"/>
+      <img  class="about-plus-mobile" src="./images/mobile/plus-mobile.svg"/>
       <div class="about__text-box">
-        <p class="about-text-top">SocketCar - компанія, що спеціалізується на оснащенні авто якісними<br>
-          протиугінними пристроями. Маючи 10-річний досвід дослідження<br> зломів та угонів транспортних
-          засобів, команда IT-інженерів та<br> фахівців створила єдиний комплекс запобіжних заходів, що поєднав<br>
-          механічні, електронні та програмні методи захисту Вашого авто!</p>
-        <p class="about-text-center">Унікальність зручного та естетичного дівайсу -<br> гордість компанії!</p>
-        <p class="about-text-bot">Мета роботи нашої компанії -<br> убезпечититранспортні засоби наших клієнтів,<br>
-          тому велике увага приділяється технічній<br> підтримки та післяпродажного сервісу.</p>
-        <p class="about-text-top-tablet">SocketCar - компанія, що спеціалізується на оснащенні авто якісними
-          протиугінними пристроями. Маючи 10-річний досвід дослідження зломів та угонів транспортних
-          засобів, команда IT-інженерів та фахівців створила єдиний комплекс запобіжних заходів, що поєднав
-          механічні, електронні та програмні методи захисту Вашого авто!</p>
-        <p class="about-text-center-tablet">Унікальність зручного та естетичного дівайсу - гордість компанії!</p>
-        <p class="about-text-bot-tablet">Мета роботи нашої компанії - убезпечититранспортні засоби наших клієнтів,
-          тому велике увага приділяється технічній підтримки та післяпродажного сервісу.</p>
+        <p class="about-text-top">SocketCar - компанія, яка має досвід у сфері безпеки.<br>
+        <p class="about-text-center">Ми дійшли висновку, що поєднання механічної та електричної<br> складових системи
+          можуть гарантувати високу ефективність<br> пристрою і по-справжньому захистити Ваш транспортний засіб.<br>
+          Наша мета - знизити відсоток угонів транспортних засобів, збільшити<br> кількість вдячних клієнтів, завоювати Вашу довіру!</p>
+        <p class="about-text-bot">SocketCar - Ваш зручний та безпечний Партнер!</p>
+        <p class="about-text-top-tablet">SocketCar - компанія, яка має досвід у сфері безпеки</p>
+        <p class="about-text-center-tablet">Ми дійшли висновку, що поєднання механічної та електричної складових системи
+          можуть гарантувати високу ефективність пристрою і по-справжньому захистити Ваш транспортний засіб.
+          Наша мета - знизити відсоток угонів транспортних засобів, збільшити кількість вдячних клієнтів, завоювати Вашу довіру!</p>
+        <p class="about-text-bot-tablet">SocketCar - Ваш зручний та безпечний Партнер!</p>
         <span class="red-row-tablet-reverse"></span>  
       </div>
     </div>
@@ -201,18 +176,18 @@
   <div class="footer__wrapper">
     <h2 class="footer-title">є що сказати?</h2>
     <div class="footer__social-box">
-      <a href=""><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="18.619" height="15.614" viewBox="0 0 18.619 15.614">
+      <a href="https://t.me/socketcar" target="blank"><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="18.619" height="15.614" viewBox="0 0 18.619 15.614">
         <path class="a" d="M18.567,5.95,15.757,19.2c-.212.935-.765,1.168-1.55.727L9.926,16.773,7.86,18.759a1.075,1.075,0,0,1-.86.42l.308-4.36,7.934-7.17c.345-.308-.075-.478-.536-.17L4.9,13.655.674,12.334c-.919-.287-.935-.919.191-1.359L17.382,4.611C18.147,4.324,18.816,4.782,18.567,5.95Z" transform="translate(-0.001 -4.528)"/></svg></a>
-      <a href=""><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+      <a href="#"><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
         <path d="M8,0C5.827,0,5.555.01,4.7.048A5.9,5.9,0,0,0,2.76.42a3.918,3.918,0,0,0-1.417.923A3.9,3.9,0,0,0,.42,2.76,5.882,5.882,0,0,0,.048,4.7C.008,5.555,0,5.827,0,8s.01,2.445.048,3.3A5.9,5.9,0,0,0,.42,13.24a3.923,3.923,0,0,0,.923,1.417,3.912,3.912,0,0,0,1.417.923,5.906,5.906,0,0,0,1.942.372c.853.04,1.125.048,3.3.048s2.445-.01,3.3-.048a5.92,5.92,0,0,0,1.942-.372,4.088,4.088,0,0,0,2.34-2.34,5.9,5.9,0,0,0,.372-1.942c.04-.853.048-1.125.048-3.3s-.01-2.445-.048-3.3A5.916,5.916,0,0,0,15.58,2.76a3.926,3.926,0,0,0-.923-1.417A3.9,3.9,0,0,0,13.24.42,5.885,5.885,0,0,0,11.3.048C10.445.008,10.173,0,8,0ZM8,1.44c2.135,0,2.39.011,3.233.047a4.408,4.408,0,0,1,1.485.277,2.633,2.633,0,0,1,1.519,1.518,4.417,4.417,0,0,1,.275,1.485c.038.844.047,1.1.047,3.233s-.01,2.39-.049,3.233a4.5,4.5,0,0,1-.281,1.485,2.54,2.54,0,0,1-.6.921,2.5,2.5,0,0,1-.92.6,4.449,4.449,0,0,1-1.49.275c-.849.038-1.1.047-3.239.047s-2.391-.01-3.239-.049a4.536,4.536,0,0,1-1.491-.281,2.477,2.477,0,0,1-.919-.6,2.429,2.429,0,0,1-.6-.92,4.54,4.54,0,0,1-.28-1.49c-.03-.84-.041-1.1-.041-3.229s.011-2.391.041-3.241a4.535,4.535,0,0,1,.28-1.489,2.371,2.371,0,0,1,.6-.921,2.366,2.366,0,0,1,.919-.6A4.428,4.428,0,0,1,4.731,1.46c.85-.03,1.1-.04,3.239-.04L8,1.44ZM8,3.892A4.108,4.108,0,1,0,12.108,8,4.108,4.108,0,0,0,8,3.892Zm0,6.775A2.667,2.667,0,1,1,10.667,8,2.666,2.666,0,0,1,8,10.667ZM13.231,3.73a.96.96,0,1,1-.96-.959A.961.961,0,0,1,13.231,3.73Z"/></svg></a>
-      <a href=""><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="8.082" height="16" viewBox="0 0 8.082 16">
+      <a href="https://fb.me/Socketcar777" target="blank"><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="8.082" height="16" viewBox="0 0 8.082 16">
         <path d="M76.961,8.522h1.754v7.22a.258.258,0,0,0,.258.258h2.974a.258.258,0,0,0,.258-.258V8.556h2.016a.258.258,0,0,0,.256-.229l.306-2.658a.258.258,0,0,0-.256-.288H82.2V3.715c0-.5.27-.757.8-.757h1.518a.258.258,0,0,0,.258-.258V.26A.258.258,0,0,0,84.527,0H82.435l-.1,0a4.01,4.01,0,0,0-2.622.988A2.75,2.75,0,0,0,78.8,3.433V5.381H76.961a.258.258,0,0,0-.258.258V8.263A.258.258,0,0,0,76.961,8.522Z" transform="translate(-76.703)"/></svg></a>
-      <a href=""><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="19.543" height="16" viewBox="0 0 19.543 16">
+      <a href="#"><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="19.543" height="16" viewBox="0 0 19.543 16">
         <path d="M19.1,29.944a7.408,7.408,0,0,1-.945.344,4.178,4.178,0,0,0,.851-1.5.315.315,0,0,0-.461-.367,7.438,7.438,0,0,1-2.2.869,4.2,4.2,0,0,0-7.132,3,4.28,4.28,0,0,0,.034.542,10.74,10.74,0,0,1-7.372-3.911.315.315,0,0,0-.517.04,4.2,4.2,0,0,0,.43,4.829,3.553,3.553,0,0,1-.561-.251.315.315,0,0,0-.468.268c0,.019,0,.037,0,.056a4.21,4.21,0,0,0,2.054,3.608c-.107-.011-.213-.026-.319-.046a.315.315,0,0,0-.359.406,4.194,4.194,0,0,0,3.073,2.812,7.422,7.422,0,0,1-3.967,1.132,7.59,7.59,0,0,1-.889-.052.315.315,0,0,0-.207.578A11.314,11.314,0,0,0,6.261,44.1a10.884,10.884,0,0,0,8.433-3.7,11.739,11.739,0,0,0,2.922-7.651c0-.115,0-.231-.005-.347a8.155,8.155,0,0,0,1.877-1.988.315.315,0,0,0-.39-.463Z" transform="translate(0.002 -28.097)"/></svg></a>
-      <a href=""><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="22.735" height="16" viewBox="0 0 22.735 16">
+      <a href="#"><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="22.735" height="16" viewBox="0 0 22.735 16">
         <path d="M21.849,47.29c-.821-.976-2.336-1.373-5.229-1.373H6.115c-2.96,0-4.5.424-5.318,1.462-.8,1.013-.8,2.5-.8,4.57v3.936c0,4,.946,6.032,6.115,6.032h10.5c2.509,0,3.9-.351,4.8-1.212.923-.883,1.316-2.324,1.316-4.82V51.949C22.735,49.771,22.673,48.27,21.849,47.29ZM14.6,54.46l-4.77,2.493a.733.733,0,0,1-1.073-.65v-4.97a.733.733,0,0,1,1.071-.651l4.77,2.477a.733.733,0,0,1,0,1.3Z" transform="translate(0 -45.917)"/></svg></a>
     </div>
-    <p class="footer-text">Ми завжди готові вислухати нові<br> пропозиції та побажання по роботі сервісу</p>
+    <p class="footer-text">Ми завжди готові вислухати нові пропозиції та побажання по роботі сервісу</p>
       <form class="footer__form" action="/" target="" method="" autocomplete="on">
         <label><input class="form-input" type="text" placeholder="Ваше ім'я"/></label>
         <label><input class="form-input" type="tel"  placeholder="Ваш номер телефону"/></label>
@@ -233,6 +208,7 @@
       <p class="all-rights">© 2020 Socket Car. Все права защищены.</p>
   </div>
 </footer>
+<!-- ---MODAL WINDOW--- -->
 <div class="modal"><!--JS Modal window-->
   <div class="modal__content">
       <div class="close">
